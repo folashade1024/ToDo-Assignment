@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <main class="">
+        <nav class="navigation">
+          <ul class="navigation_list">
+            <li class="navigation_list-items">
+              <a href="" class="logo">ToDo List 2022</a>
+            </li>
+            <li class="navigation_list-items">About</li>
+          </ul>
+        </nav>
+  
+        <section class="to-do_section">
+          <form class="form"> 
+            <!-- form is the direct parent of the add button -->
+            <input type="text" class="form_input" />
+            <button id="add_todo_btn" class="todo_actions add_btn">Add</button>
+            <button class="todo_actions save_edit_btn hidden" id="save_edit_btn">
+              Save edit
+            </button>
+          </form>
+  
+          <!-- the parent of form is section -->
+          <h1 class="to-do_section_heading">Monday To-do</h1>
+          <ul class="to-do-container">
+  
+          </ul>
+  
+        </section>
+      </main>
+
+
+</body>
+<script src="./index.js"></script>
+</html>

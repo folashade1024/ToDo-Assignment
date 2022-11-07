@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+:root {
+    --textColour: black;
+    --textColour2: white;
+    --fontPrimary: "poppins", sans-serif;
+    --primaryColour: tomato;
+    --secondaryColour: red;
+}
+/* body{
+    background-color: rgb(0, 0, 255);
+} */
+
+.navigation_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+    font-family: var(--fontPrimary);
+}
+
+.navigation_list-items {
+    list-style-type: none;
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--primaryColour);
+}
+
+.to-do_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.to-do_section_heading {
+    color: var(--textColour);
+    font-size: 24px;
+    font-family: var(--fontPrimary);
+    margin-bottom: 40px;
+}
+
+.todo_section_todoitem {
+    display: flex;
+    width: 300%;
+    margin-top: 20px;
+}
+
+.todo_section_todoitem>div {
+    display: flex;
+    align-items: center;
+}
+
+.todo_section_todoitem .todo_text {
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 10px;
+    font-family: var(--fontPrimary);
+}
+
+.todo_actions {
+    border-radius: 8px;
+    padding: 5px;
+    color: var(--textColour2);
+    background-color: var(--primaryColour);
+    outline: none;
+    border: 1px solid transparent;
+}
+
+.delete_btn {
+    background-color: var(--secondaryColour);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 300px;
+}
+
+.form_input {
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid var(--textColour);
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 20px;
+    font-family: var(--fontPrimary);
+}
+
+.add_btn {
+    padding: 10px 16px;
+    background-color: var(--secondaryColour);
+}
+
+.hidden {
+    display: none;
+}
